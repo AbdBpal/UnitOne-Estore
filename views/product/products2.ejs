@@ -1,0 +1,44 @@
+<div class="content">
+    <div class="container">
+        <div class="page-title">
+            <h3>products
+                <a href="roles" class="btn btn-sm btn-outline-primary float-end"><i class="fas fa-user-shield"></i> Roles</a>
+            </h3>
+        </div>
+        <div class="box box-primary">
+            <div class="box-body">
+                <table width="100%" class="table table-hover" id="dataTables-example">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>idk</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0; i < products.length; i++) {
+                            const product = products[i] %>
+                            <tr>
+                                <td><%= product.name %></td>
+                                <td><%= product.description %></td>
+                                <td><%= product.price%></td>
+                                <td>idk</td>
+                                <td><%= product.quantity%></td>
+                                <td class="text-end">
+                                    <a href="editProduct?id=<%= product.id%>" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                                    <a href="deleteProduct?id=<%= product.id%>" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                                </td>
+                            </tr>
+                         <% } %>
+                        
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

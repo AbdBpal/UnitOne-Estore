@@ -1,0 +1,72 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="card">
+                <div class="card-header">Basic Form </div>
+                <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <form accept-charset="utf-8" method="post">
+                        <input type="hidden" name="id" value="<%= user.id%> ">
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" placeholder="Email Address" class="form-control" value="<%= user.email %>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" name="username" placeholder="Usernme" value="<%= user.username %>"  class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">name</label>
+                            <input type="text" name="name" placeholder="name" value="<%= user.name %>"  class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">phone</label>
+                            <input type="text" name="phone" placeholder="phone" value="<%= user.phone %>"  class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthday" class="form-label">birthday</label>
+                            <input type="date" name="birthday" placeholder="birthday" value="<%= user.birthday %>"  class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="password" placeholder="Password" value="<%= user.password %>"  class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gender" class="form-label">gender</label>
+                            <select name="gender" id="">
+                                <option value="male">Male</option>
+                                <option value="female" <%= user.gender=='female'?'selected':'' %>>Female</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">description</label>
+                            <input type="text" name="description" placeholder="description" value="<%= user.description %>"  class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="role" class="form-label">role</label>
+                            <select name="role" id="">
+                                <option value="advertisement manager">Advertisement Manager</option>
+                                <option value="user" <%= user.role=='user'?'selected':'' %> >User</option>
+                                <option value="admin" <%= user.role=='admin'?'selected':'' %> >Admin</option>
+                                <option value="store manager" <%= user.role=='store manager'?'selected':'' %> >Store Manager</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="status" class="form-label">status</label>
+                            <select name="status" id="" >
+                                <option value="inactive">Inactive</option>
+                                <option value="active" <%= user.status=='active'?'selected':'' %> >Active</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="submit" class="btn btn-primary">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+<div class="content">
+    <div class="container">
+        <div class="page-title">
+            <h3>UI DATE & TIME PICKER</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">jQuery Air Datepicker</div>
+                    <div class="card-body col-md-6">
+                        <p class="card-title">Air Datepicker is a lightweight cross-browser jQuery datepicker. <a href="//github.com/t1m0n/air-datepicker" class="text-info font-italic">View on Github.</a></p>
+                        <p class="text-muted">Datepicker will automatically initialize on elements with class <code>.datepicker-here</code>, options may be sent via data attributes.</p>
+                        <div class="datepicker-here" data-language="en" date-inline="true"></div><br>
+                        <code>&lt;input type='text' class='datepicker-here' data-language='en' /&gt;</code>
+                        <form>
+                            <br>
+                            <div class="mb-3">
+                                <input type="text" class="form-control datepicker-here" data-language="en" aria-describedby="datepicker" placeholder="Date picker">
+                                <small id="datepicker" class="form-text text-muted">You can change the month, year, and date</small>
+                            </div>
+                        </form>
+                        <p class="line"></p>
+                        <h5>Month Selection</h5>
+                        <code>
+                            &lt;input type="text" class="datepicker-here" <br> data-language="en" <br> data-min-view="months" <br> data-view="months" <br> data-date-format="MM" /&gt;
+                        </code>
+                        <form>
+                            <br>
+                            <div class="mb-3">
+                                <input type="text" class="form-control datepicker-here" data-language="en" data-position="top left" data-min-view="months" data-view="months" data-date-format="MM" aria-describedby="month" placeholder="Month picker">
+                                <small id="month" class="form-text text-muted">You can also select Month</small>
+                            </div>
+                        </form>
+                        <p class="line"></p>
+                        <h5>Date Range Selection</h5>
+                        <p class="text-muted">Use <code>data-range="true"</code> attribute for choosing range of dates.</p>
+                        <code>
+                            &lt;input type="text" class="datepicker-here" <br> data-range="true" <br> data-multiple-dates-separator="-" <br> data-language="en" /&gt;
+                        </code>
+                        <form>
+                            <br>
+                            <div class="mb-3">
+                                <input type="text" class="form-control datepicker-here" data-range="true" data-multiple-dates-separator="-" data-language="en" data-position="top left" aria-describedby="daterange" placeholder="Date range picker">
+                                <small id="daterange" class="form-text text-muted">You can select start and end date for date range selection</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">JS MDTimePicker</div>
+                    <div class="card-body col-md-6">
+                        <p class="card-title">Material concept time picker, a JS plugin. <a href="//github.com/dmuy/MDTimePicker" class="text-info font-italic">View on Github.</a> </p>
+                        <p class="text-muted">Add a class <code>.timepicker</code> on your input element for initialization.</p>
+                        <code>&lt;input type="text" class="timepicker"/&gt;</code>
+                        <p></p>
+                        <p class="text-muted"><br>Initialize time picker with javascript.</p>
+                        <code>&lt;script&gt; <br>mdtimepicker('.timepicker', { format: 'hh:mm' }); <br><span class="text-muted">// Initialize time picker</span> <br> &lt;/script&gt;</code>
+                        <form>
+                            <br>
+                            <div class="mb-3">
+                                <input type="text" class="form-control timepicker" aria-describedby="time12" placeholder="Time picker">
+                                <small id="time12" class="form-text text-muted">Inputs a 12 hour time format</small>
+                            </div>
+                        </form>
+                        <p class="line"></p>
+                        <h5>Advance Options</h5>
+                        <p class="text-muted">Initialize time picker with advance options.</p>
+                        <code>
+                            { <br>
+                            timeFormat: 'hh:mm:ss.000', <span class="text-muted">// format of the time value (data-time attribute) </span> <br>
+                            format: 'h:mm tt', <span class="text-muted">// format of the input value </span> <br>
+                            theme: 'blue', <span class="text-muted">// theme of the timepicker </span> <br>
+                            hourPadding: false, <span class="text-muted">// determines if display value has zero padding for hour value less than 10 (i.e. 05:30 PM); </span> <br>
+                            clearBtn: false, <span class="text-muted">// determines if clear button is visible </span> <br>
+                            is24hour: false, <span class="text-muted">// determines if the clock will use 24-hour format in the UI;</span> <br>
+                            events: { <br>
+                            &nbsp; timeChanged: null, <span class="text-muted">// Callback function on time selection </span> <br>
+                            &nbsp; ready: null, <span class="text-muted">// Callback function when time picker is initialized </span> <br>
+                            &nbsp; shown: null, <span class="text-muted">// Callback function when time picker is shown </span> <br>
+                            &nbsp; hidden: null <span class="text-muted">// Callback function when time picker is hidden </span> <br>
+                            &nbsp; } <br>
+                            }
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
